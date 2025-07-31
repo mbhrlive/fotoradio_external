@@ -100,6 +100,19 @@
             transform: translateY(-2px); /* Effetto leggero di sollevamento */
         }
 
+        .return-link {
+            display: block; /* Assicura che vada su una nuova riga */
+            margin-top: 30px; /* Spazio sopra il link */
+            font-size: 0.9em;
+            color: #a0a0a0; /* Colore più tenue per il testo "torna indietro" */
+            text-decoration: none; /* Rimuove la sottolineatura di default */
+            transition: color 0.3s ease;
+        }
+
+        .return-link:hover {
+            color: #007bff; /* Blu al passaggio del mouse */
+        }
+
         /* Responsive adjustments */
         @media (max-width: 600px) {
             .container {
@@ -121,14 +134,21 @@
 <body>
     <div class="container">
         <div class="logo-placeholder">
-            <img src="https://via.placeholder.com/150x80?text=Fotoradio+Logo" alt="Fotoradio Logo">
+            <img src="https://mbhrlive.github.io/fotoradio_external/img/fotoradio_logo.png" alt="Fotoradio Logo">
         </div>
 
-        <h2>Contattaci</h2>
+        <h2>Contatto!</h2>
 
         <form action="https://formspree.io/f/xblkkqpl" method="POST">
             <label for="email">La tua email:</label>
             <input type="email" name="email" id="email" required>
 
             <label for="message">Il tuo messaggio:</label>
-            <textarea name="message" id="message" required></textarea
+            <textarea name="message" id="message" required></textarea>
+
+            <button type="submit">Invia Messaggio</button>
+        </form>
+        <a href="https://fotoradio.it" class="return-link">Torna Indietro</a>
+        </div>
+</body>
+</html>
